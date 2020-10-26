@@ -58,7 +58,7 @@ if($first_line == "Succesful Validation of Client Device" || $first_line == "Val
  	
 
  	 }
- else{echo " $first_line";
+ else{echo " $output";
 
 
 
