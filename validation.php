@@ -46,7 +46,7 @@ $re = file_get_contents($fn);
   //echo "string  $first_line";
   echo "$first_line";
 
- if($first_line == "Succesful Validation of Client Device" || $first_line == "Validation failed"){
+
  	 session_start();
              $_SESSION['username'] = $_POST['user'];
               $_SESSION['password'] = $_POST['password'];
@@ -59,12 +59,6 @@ $re = file_get_contents($fn);
 
  	
  	
- }
- else{echo "  ";
-
-
-
-}
 
 
 }
