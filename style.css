@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-x: auto;
+  background: url("white.jpg"), -webkit-linear-gradient(bottom, #0250c5, #FFBF0D);
+}
+ 
+.coverup{
+
+  width:390px;
+  background: #2b286f;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0;
+  padding: 50px 35px 10px 35px;
+}
+.coverup .header{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+
+}
+.coverup .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.coverup .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .form-group{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .form-group .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .form-group input{
+  height: 100%;
+  width: 93%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+  
+}
+form .page .form-group select{
+  width: 93%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+form .page .form-group .next{
+  width: 45%;
+  height: calc(100% + 5px);
+  border: none;
+  background:#151E3D;
+  margin-top: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  text-align: center;
+  text-decoration: #fff
+
+}
+form .page .btns  .prev{
+  width: 45%;
+  height: calc(100% + 5px);
+  border: none;
+  background:#151E3D;
+  margin-top: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  margin-right: 3px;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: #fff
+}
+form .page .btns  .next{
+	width: 45%;
+  height: calc(100% + 5px);
+  border: none;
+  background:#151E3D;
+  margin-top: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  margin-left: 3px;
+  text-align: center;
+  text-decoration: #fff
+}
+form .page .form-group .success{
+	width: 45%;
+  height: calc(100% + 5px);
+  border: none;
+  background:#151E3D;
+  margin-top: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  margin-left: 3px;
+  text-align: center;
+  text-decoration: #fff
+}
+#progressBar{
+width: 20%; 
+background:#FFBF0D;
+transition: 1s;
+
+}
