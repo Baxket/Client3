@@ -9,7 +9,7 @@ include 'validation.php';
 
 
 if (  $_SESSION['username']  == null ||  $_SESSION['password'] == null) {
-    header("location: Index.php");
+    header("location: index.php");
     exit();
 }
 global $var;
@@ -90,7 +90,7 @@ $file = fopen($f, "w+");
 $size = filesize($f); 
 $text = fread($file, 2); 
 fwrite($file, "0");
-echo("<script>location.href = 'Index.php';</script>");
+echo("<script>location.href = 'index.php';</script>");
 exit(); 
 } ?>
     </div>
