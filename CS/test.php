@@ -7,7 +7,7 @@ echo "$f";
 
 
 
-$output="ffff";
+$output=exec("sh initial.sh $name $pass");
  echo "$output";
  
 
