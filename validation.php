@@ -27,7 +27,7 @@
 
  $old_path=getcwd();
  chdir('CS');
-$output=shell_exec("sh initial.sh $name $pass");
+$output=system("sh initial.sh $name $pass");
 
  chdir($old_path);
  echo "$output";
