@@ -31,38 +31,7 @@ $output=shell_exec("sh initial.sh $name $pass");
 
  chdir($old_path);
  echo "$output";
- $first_line = strtok($output,".");
- echo "$first_line";
- $word = "Available Channels:0";
- $fn = "status.php"; 
-$file = fopen($fn, "w+"); 
-$size = filesize($fn); 
-$text = fread($file, 2);
-fwrite($file, "1" );
-
-
-$re = file_get_contents($fn);
-//echo $str;
-  //echo "string  $first_line";
-  echo "$first_line";
-
-if($first_line == "Succesful Validation of Client Device" || $first_line == "Validation failed"){
- 	 session_start();
-             $_SESSION['username'] = $_POST['user'];
-              $_SESSION['password'] = $_POST['password'];
-              $_SESSION['output']= $output;
-             
-
-              header('location:Userdetails.php');
-              session_write_close();
- 	
-
- 	 }
- else{echo " $output";
-
-
-
-}
+ 
 
  	
 
