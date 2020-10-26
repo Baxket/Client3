@@ -44,6 +44,7 @@ fwrite($file, "1" );
 $re = file_get_contents($fn);
 //echo $str;
   //echo "string  $first_line";
+  echo "$first_line";
 
  if($first_line == "Succesful Validation of Client Device" || $first_line == "Validation failed"){
  	 session_start();
