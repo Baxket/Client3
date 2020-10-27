@@ -10,7 +10,7 @@ echo "$f";
 $output= Shell_exec("sh initial.sh 1111 2222");
 
 var_dump($output);
- 
+ echo "$output";
 
 
 ?>
