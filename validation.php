@@ -27,21 +27,7 @@
 
  $old_path=getcwd();
  chdir('CS');
-$output="Succesful Validation of Client Device.
-Serial_Number=381c1232-3k7-jhfnne4e4-za9ab027f
-Device_Id=c97026
-Username=c97026
-Model_Id=c63781-gdbnsn-63167hdb
-Manufacturer_Id=5345-1277hd-637ha
-Region=Greater Accra Region
-District=ablekuma Central Municipal
-Operator=NCI
-Latitude=6.68
-Longitude=-1.6006
-Antenna_Height=54
-Device_Type=Fixed
-Antenna_Height_Type=Above Ground Level
-Available_Channels=62";
+$output=shell_exec("sh initial.sh $name $pass");
 
  chdir($old_path);
  echo "$output";
