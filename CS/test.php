@@ -7,8 +7,9 @@ echo "$f";
 
 
 
-$output=exec("sh initial.sh 1111 2222");
- echo "$output";
+$output= Shell_exec("sh initial.sh 1111 2222");
+
+var_dump($output);
  
 
 
