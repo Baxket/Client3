@@ -57,6 +57,7 @@ $output=shell_exec("sh forward_avail_spec.sh  $latitude $longitude"); //Execute 
   Transmit_long=$Transmit_long<br>
   Transmit_Power=$Transmit_Power<br>
   Tranmsit_distance=$Transmit_distance<br>
+  thank you.
 
  
 EOT;
@@ -66,6 +67,7 @@ echo $array_send;
  		$array_send = <<<EOT
    stopTime=0<br>
    Channel=0<br>
+   thank you.
   
 EOT;
 echo $array_send;
