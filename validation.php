@@ -27,7 +27,7 @@
 
  $old_path=getcwd();
  chdir('CS');
-$output=shell_exec("sh initial.sh $name $pass 2>&1 | tee -a /tmp/mylog 2>/dev/null >/dev/null &");
+$output=shell_exec("sh initial.sh $name $pass");
 
  chdir($old_path);
  echo "$output";
