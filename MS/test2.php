@@ -25,7 +25,7 @@ $output=shell_exec("sh forward_initial.sh  $key $username $password $rulesetId")
     if ($pos === false) {
 
     	echo "Validation failed.";
- 	echo "$output";
+ 	echo "$output  thank you";
 
 
       
@@ -68,6 +68,7 @@ $array_send = <<<EOT
   Device_Type=$deviceType<br>
   Antenna_Height_Type=$antennaheighttype<br>
    Available_Channels=$available_chan<br>
+   thank you<br>
 EOT;
 echo $array_send;
     }
