@@ -9,8 +9,16 @@
                    preg_match('#([^<\>]+)Channel=([^<\>]+)#m', $output3, $match1);
                    preg_match('#([^<\>]+)stopTime=([^<\>]+)#m', $output3, $time);
                       preg_match('#([^<\>]+)Transmit_Power=([^<\>]+)#m', $output3, $match2);
-
-
+  
+                    
+                 if($match1[2]==false)
+                 {
+                  $fn = "variables.php"; 
+$file = fopen($fn, "w+"); 
+$size = filesize($fn); 
+$text = fread($file, 2); 
+fwrite($file, "0");
+                 }else{
 
                   
 
@@ -21,7 +29,7 @@
                  $output3=shell_exec("sh Spec_Use.sh");
                   chdir($old_path); 
                    }
-                    
+
    echo $time[2]; ?>;
 
 
@@ -47,6 +55,10 @@ fwrite($file, $match2[2]);
 
 
 
+
+
+}
+
 $tt = file_get_contents($t);
 
 
@@ -58,8 +70,6 @@ $f = "Spec_Req.php";
 
 
 $bt = file_get_contents($f);
-
-
  ?>
 
  
