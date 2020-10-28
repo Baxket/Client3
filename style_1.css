@@ -1,4 +1,14 @@
-      .header {
+        @viewport {
+      width: extend-to-zoom;
+      zoom: 0.2;
+    }
+
+      @-ms-viewport {
+      width: extend-to-zoom;
+      zoom: 0.2;
+    }  
+
+  .header {
             position: fixed;
             top: 0px;
             left: 0px;
