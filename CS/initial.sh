@@ -2,7 +2,7 @@
 user=$1
 password=$2
 
-curl --header "Content-Type: application/json" --request POST --data '{"deviceDesc": {"rulesetIDs": "57c8e0e9-dbf9-314a-b985-ea431ec6b6f6","password":"'"$2"'","username":"'"$1"'"},"key":"client"}' https://tvws-basestation.herokuapp.com/MS/test2.php >Slave_init_resp.html
+curl --header "Content-Type: application/json" --request POST --data '{"deviceDesc": {"rulesetIDs": "57c8e0e9-dbf9-314a-b985-ea431ec6b6f6","password":"'"$2"'","username":"'"$1"'"},"key":"client"}' https://tvws-basestation.herokuapp.com/MS/test2.php >slave_init_resp.html
 
  > config.cfg
 status1=$(cat slave_init_resp.html | grep -o "Succesful Validation of Client Device")
