@@ -34,11 +34,7 @@ $output=shell_exec("sh initial.sh $name $pass");
  $first_line = strtok($output,".");
  echo "$first_line";
 
- $fn = "status.php"; 
-$file = fopen($fn, "w+"); 
-$size = filesize($fn); 
-$text = fread($file, 2);
-fwrite($file, "1" );
+
 
 
 $re = file_get_contents($fn);
@@ -46,6 +42,13 @@ $re = file_get_contents($fn);
   //echo "string  $first_line";
 
  if($first_line == "Succesful Validation of Client Device" || $first_line == "Validation failed"){
+  
+   $fn = "status.php"; 
+$file = fopen($fn, "w+"); 
+$size = filesize($fn); 
+$text = fread($file, 2);
+fwrite($file, "1" );
+  
  	 session_start();
              $_SESSION['username'] = $_POST['user'];
               $_SESSION['password'] = $_POST['password'];
