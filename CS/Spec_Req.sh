@@ -23,7 +23,7 @@ curl --header "Content-Type: application/json" --request POST --data '{
          "longitude" :"'"$LONG"'"
     }
     
-}' https://tvwsclient.herokuapp.com/MS/master_avail_spec_server.php >slave_spec_resp.html
+}' https://tvws-basestation.herokuapp.com/MS/master_avail_spec_server.php >slave_spec_resp.html
 
 status=$(cat slave_spec_resp.html | grep -o "AVAIL_SPEC_REQ_SLAVE")
 resp=`cat slave_spec_resp.html`

@@ -25,7 +25,7 @@ curl --header "Content-Type: application/json" --request POST --data '{
       ]
             
  
-    }' https://tvwsclient.herokuapp.com/MS/master_spec_use.php  >slave_spec_use_resp.html
+    }' https://tvws-basestation.herokuapp.com/MS/master_spec_use.php  >slave_spec_use_resp.html
 
 
 resp=`cat slave_spec_use_resp.html`
