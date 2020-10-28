@@ -1,11 +1,10 @@
         @viewport {
-      width: extend-to-zoom;
-      zoom: 0.2;
+      width: device-width;
+      zoom: 1.0;
     }
 
       @-ms-viewport {
-      width: extend-to-zoom;
-      zoom: 0.2;
+      width: device-width;
     }  
 
   .header {
@@ -231,7 +230,48 @@
             width: 40%;
             padding-bottom: 10px;
         }
-        
+@medi screen and (min-width:321px) and (max-width:480px){ 
+        table{
+ position: absolute;
+ z-index: 2;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 10px 10px 10px 10px;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 10px 10px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: #48D1CC;
+ color: #fafafa;
+ font-family: 'Montserrat',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ background-color: #fafafa;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #E0FFFF;
+}
+
+        #somethingorother {
+        width:320px
+        }
+}
         table{
  position: absolute;
  z-index: 2;
