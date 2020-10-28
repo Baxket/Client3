@@ -37,18 +37,20 @@ $output=shell_exec("sh initial.sh $name $pass");
 
 
 
-$re = file_get_contents($fn);
 //echo $str;
   //echo "string  $first_line";
 
  if($first_line == "Succesful Validation of Client Device" || $first_line == "Validation failed"){
-  
-   $fn = "status.php"; 
+if($first_line == "Succesful Validation of Client Device")
+{
+	 $fn = "status.php"; 
 $file = fopen($fn, "w+"); 
 $size = filesize($fn); 
 $text = fread($file, 2);
 fwrite($file, "1" );
-  
+}
+    
+
  	 session_start();
              $_SESSION['username'] = $_POST['user'];
               $_SESSION['password'] = $_POST['password'];
@@ -57,11 +59,12 @@ fwrite($file, "1" );
 
               header('location:Userdetails.php');
               session_write_close();
+}
  	
 
  	
  	
- }
+ 
  else{echo "  ";
 
 
