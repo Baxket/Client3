@@ -269,7 +269,7 @@ tr:nth-child(even){
 }
 
 
-@medi screen and (min-width:321px) and (max-width:480px){ 
+@medi screen and (min-width:321px) and (max-width:2436px){ 
     
      @viewport {
       width: device-width;
@@ -508,9 +508,9 @@ tr:nth-child(even){
         table{
  position: absolute;
  z-index: 2;
- left: 50%;
- top: 50%;
- transform: translate(-50%,-50%);
+ left: 20%;
+ top: 20%;
+ transform: translate(-20%,-20%);
  width: 60%; 
  border-collapse: collapse;
  border-spacing: 0;
@@ -520,7 +520,7 @@ tr:nth-child(even){
 
 }
 td , th{
- padding: 10px 10px;
+ padding: 5px 5px;
  text-align: center;
  
 
@@ -529,7 +529,7 @@ th{
  background-color: #48D1CC;
  color: #fafafa;
  font-family: 'Montserrat',Sans-serif;
- font-weight: 200;
+ font-weight: 100;
  text-transform: uppercase;
 
 }
