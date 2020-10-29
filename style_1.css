@@ -842,7 +842,7 @@ tr:nth-child(even){
             border-radius: 5px;
             text-align: center;
             background-color: white;
-            width: 50%;
+            width: 40%;
             padding-bottom: 2px;
         }
         
@@ -851,7 +851,7 @@ tr:nth-child(even){
         table{
  position: fixed;
  z-index: 2;
- left: 35%;
+ left: 29%;
  top: 58%;
 
  transform: translate(-50%,-50%);
