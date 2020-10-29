@@ -594,7 +594,7 @@ tr:nth-child(even){
 
 
 
-    @media screen and (min-width:159px) and (max-width:959px)
+    @media screen and (min-width:75px) and (max-width:959px)
     {
 
       .header {
