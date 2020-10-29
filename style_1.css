@@ -867,6 +867,7 @@ tr:nth-child(even){
 td , th{
  padding: 0.5px 0.5px;
  text-align: center;
+ width: 2%;
  
 
 }
@@ -876,14 +877,16 @@ th{
  font-family: 'Montserrat',Sans-serif;
  font-weight: 200;
  text-transform: uppercase;
+ width: 2%;
 
 }
 tr{
- width: 15%;
+ width: 10%;
  background-color: #fafafa;
  font-family: 'Montserrat', sans-serif;
 }
 tr:nth-child(even){
+     width: 10%;
  background-color: #E0FFFF;
 }
     }
