@@ -239,6 +239,7 @@
         .container {
             margin: 90px auto;
             margin-bottom: 50px;
+             margin-top: 45px;
             border-radius: 30px;
             text-align: center;
             background-color: white;
@@ -250,7 +251,7 @@
  position: absolute;
  z-index: 2;
  left: 50%;
- top: 50%;
+ top: 45%;
  transform: translate(-50%,-50%);
  width: 35%; 
  border-collapse: collapse;
