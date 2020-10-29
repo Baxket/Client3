@@ -263,7 +263,15 @@ echo $match1[2];
    echo $match[2];
 ?></td>
   </tr>
-
+ <tr>
+    <th>Base station</th>
+  <td>  <?php 
+   preg_match('#([^<\>]+)Master=([^<\>]+)#m', $output, $match);
+   echo $match[2];
+?></td>
+  </tr>	    
+	    
+	    
     </t>
             <?php
     }
