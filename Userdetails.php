@@ -40,11 +40,13 @@ $r = file_get_contents($a);
     <title>Client Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="dp.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Loader.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <style>
     
@@ -80,6 +82,12 @@ $old_path=getcwd();
 
 
     $fn = "variables.php"; 
+$file = fopen($fn, "w+"); 
+$size = filesize($fn); 
+$text = fread($file, 2); 
+fwrite($file, "0");
+
+    $fn = "variables2.php"; 
 $file = fopen($fn, "w+"); 
 $size = filesize($fn); 
 $text = fread($file, 2); 
@@ -122,7 +130,8 @@ exit();
 
     </div>
     <!-- TABLE -->
-    <table style="width:35%" id="table">
+    <div>
+    <table  id="table">
     <t>
        <?php
 
@@ -141,6 +150,7 @@ if ($response[0] == "Succesful Validation of Client Device.") {
                   chdir($old_path); 
                    preg_match('#([^<\>]+)Channel=([^<\>]+)#m', $output3, $match1);
                    preg_match('#([^<\>]+)stopTime=([^<\>]+)#m', $output3, $time);
+                     preg_match('#([^<\>]+)Transmit_Power=([^<\>]+)#m', $output3, $match2);
 
                    if($match1[2]!=0)
                    {
@@ -166,6 +176,11 @@ $text = fread($file, 2);
 fwrite($file, $match1[2]); 
 
 
+    $fa = "variables2.php"; 
+$file = fopen($fa, "w+"); 
+$size = filesize($fa); 
+$text = fread($file, 2); 
+fwrite($file, $match2[2]);
 
       $fn = "status.php"; 
 $file = fopen($fn, "w+"); 
@@ -174,8 +189,14 @@ $text = fread($file, 2);
 fwrite($file, "0"); 
 
 echo $match1[2];
+?>
 
-                  }   else{ echo "Not connected"; }     
+<script type="text/javascript">
+  var distance = 1000;
+  localStorage.setItem('recent', distance);
+</script>
+<?php 
+               }   else{ echo "Not connected"; }     
               
 
 ?></td>
@@ -201,9 +222,11 @@ echo $match1[2];
    if($r == 1)
    {
 
-   echo "";
+  echo $match2[2];
 
    }
+
+
    ?></td>
    <tr>
     <th>Longitude</th>
@@ -248,7 +271,7 @@ echo $match1[2];
 
 </table>
 
-
+</div>
 
 
     <div class="footer" onload="showTableData()">

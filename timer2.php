@@ -211,7 +211,7 @@ x[parseInt(1,10)].innerHTML=content;
 
   <script type="text/javascript">
        var customerId = $().find("td").eq(1).html();   
-                        var content = "<?php echo "" ;?>";
+                        var content = "<?php echo "------" ;?>";
 var x=document.getElementById('table').rows[parseInt(3,10)].cells;
 x[parseInt(1,10)].innerHTML=content; 
   </script><?php
@@ -239,11 +239,6 @@ $file = fopen($fn, "w+");
 $size = filesize($fn); 
 $text = fread($file, 2); 
 fwrite($file, "0");
-
-
-
-
-
 
  
  include 'timer2.php';
