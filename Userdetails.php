@@ -300,14 +300,14 @@ echo $match1[2];
  if($first_line == "Validation failed" || (strpos($output, $word) === false && $first_line=="Validation failed")){
 
 ?>
-<a name="Back" id="Back" class="button-back" href="Userlogin.php" role="button">Back</a>
+<a name="Back" id="Back" class="button-back" href="index.php" role="button">Back</a>
 <?php
 }
  elseif($first_line == "Succesful Validation of Client Device" && strpos($output, $word) !== false){
  	 
           
  	?>
- 	<a name="Refresh" id="Refresh" class="button-refresh" href="Userlogin.php" role="button">Refresh</a>
+ 	<a name="Refresh" id="Refresh" class="button-refresh" href="index.php" role="button">Refresh</a>
 
 
  <?php
