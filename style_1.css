@@ -594,7 +594,7 @@ tr:nth-child(even){
 
 
 
-    @media screen and (min-width:10px) and (max-width:459px)
+    @media screen and (min-width:271px) and (max-width:600px)
     {
 
       .header {
@@ -878,7 +878,7 @@ th{
 
 }
 tr{
- width: 10%;
+ width: 15%;
  background-color: #fafafa;
  font-family: 'Montserrat', sans-serif;
 }
