@@ -297,6 +297,11 @@ tr:nth-child(even){
       zoom: 1.0;
     }
 
+       @-webkit-viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+
 
     @media screen and (max-width:959px)
     {
@@ -662,7 +667,7 @@ tr:nth-child(even){
             position: fixed;
             top: 0px;
             
-            right: 335px;
+            right: 300px;
             height: 50px;
             padding: 5px 13px 11px 0px;
             width: 20%;
@@ -889,4 +894,24 @@ tr:nth-child(even){
      width: 10%;
  background-color: #E0FFFF;
 }
+
+  @viewport {
+      width: extend-to-zoom;
+      zoom: 1.0;
+    }
+
+      @-ms-viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+      @-moz-viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+
+       @-webkit-viewport {
+      width: device-width;
+      zoom: 1.0;
+    }
+
     }
