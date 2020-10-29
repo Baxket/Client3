@@ -594,7 +594,7 @@ tr:nth-child(even){
 
 
 
-    @media screen and (min-width:75px) and (max-width:959px)
+    @media screen and (min-width:325px) and (max-width:959px)
     {
 
       .header {
@@ -850,11 +850,11 @@ tr:nth-child(even){
         table{
  position: absolute;
  z-index: 2;
- left: 33%;
+ left: 30%;
  top: 28%;
 
  transform: translate(-30%,-30%);
- width: 65%; 
+ width: 100%; 
  border-collapse: collapse;
  border-spacing: 0;
  box-shadow: 0 2px 15px rgba(64,64,64,.7);
