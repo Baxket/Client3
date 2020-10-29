@@ -851,8 +851,8 @@ tr:nth-child(even){
         table{
  position: fixed;
  z-index: 2;
- left: 20%;
- top: 38%;
+ left: 35%;
+ top: 58%;
 
  transform: translate(-50%,-50%);
  width: 80%; 
