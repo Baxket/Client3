@@ -175,6 +175,12 @@ $size = filesize($fn);
 $text = fread($file, 2); 
 fwrite($file, $match1[2]); 
 
+			  
+      $fn = "Spec_Req.php"; 
+$file = fopen($fn, "w+"); 
+$size = filesize($fn); 
+$text = fread($file, 2); 
+fwrite($file, 1);
 
     $fa = "variables2.php"; 
 $file = fopen($fa, "w+"); 
