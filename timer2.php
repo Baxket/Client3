@@ -198,7 +198,7 @@ x[parseInt(1,10)].innerHTML=content;
     {
 
       ?>
- 
+  <div class="footer" onload="showTableData()">
        <form method="post">
    <button name="disconnect" id="disconnect" class="button-disconnect" href="Userlogin.php" role="button">Disconnect</button>
 </form>
@@ -244,7 +244,7 @@ fwrite($file, "0");
  include 'timer2.php';
 exit(); 
 } ?>
-
+</div>
 
        <?php 
     }else {exit();}?>
