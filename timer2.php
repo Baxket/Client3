@@ -241,6 +241,14 @@ $text = fread($file, 2);
 fwrite($file, "0");
 
  
+ 
+?>  </div><div class="footer" onload="showTableData()">
+<form method="post">
+      <button type="submit" name="Connect" id="Connect" class="twoToneButton" >Connect</button>
+</form>
+<?php  
+   
+   <?
  include 'timer2.php';
 exit(); 
 } ?>
