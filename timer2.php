@@ -248,7 +248,6 @@ fwrite($file, "0");
 </form>
 <?php  
    
-   <?
  include 'timer2.php';
 exit(); 
 } ?>
