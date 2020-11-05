@@ -9,7 +9,7 @@ LONG=$(cat config.cfg | grep -o 'Longitude=[^,]\+' | cut -d "=" -f2)
 DT=$(cat config.cfg | grep -o 'Device=[^,]\+' | cut -d "=" -f2)
 HHT=$(cat config.cfg | grep -o 'Antenna_Height=[^,]\+' | cut -d "=" -f2)
 HT=$(cat config.cfg | grep -o 'Height_Type=[^,]\+' | cut -d "=" -f2)
-channel=$(cat config2.cfg | grep -o 'Channel=[^,]\+' | cut -d "=" -f2)
+ID=$(cat config2.cfg | grep -o 'ID=[^,]\+' | cut -d "=" -f2)
 
 
 now=$(date +"%Y-%m-%d %T")
@@ -21,7 +21,7 @@ curl --header "Content-Type: application/json" --request POST --data '{
    
     },
       "spectra":[
-          {"ID":"'"$channel"'"}
+          {"ID":"'"$ID"'"}
       ]
             
  

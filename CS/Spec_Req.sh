@@ -30,4 +30,7 @@ resp=`cat slave_spec_resp.html`
 echo $resp
 
 Channel=$(cat slave_spec_resp.html | grep -o 'Channel=[^<,]\+' | cut -d "=" -f 2)
+ID=$(cat slave_spec_resp.html | grep -o 'ID=[^<,]\+' | cut -d "=" -f 2)
+
 echo "Channel=$Channel" >> config2.cfg
+echo "ID=$ID" >> config2.cfg
