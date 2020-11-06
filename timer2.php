@@ -58,7 +58,8 @@ var x = setInterval(function() {
                     }
         });
 
- 
+
+
 }else
  // If the count down is finished, write some text
    {
@@ -96,6 +97,37 @@ x[parseInt(1,10)].innerHTML=content;
 
 
 }, 1000);
+
+
+var y = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+  if (distance > 0){
+ var status = localStorage.getItem('r');
+    $.ajax({
+            type : "POST",  //type of method
+            url  : "Use.php",  //your page
+            data :{data:status},
+            success: function(html){  
+                               //do what you want here...
+                    }
+        }); 
+  }
+    else{
+ var status = localStorage.getItem('r');
+    $.ajax({
+            type : "POST",  //type of method
+            url  : "Use.php",  //your pages
+            data :{data:status},
+            success: function(html){  
+                               //do what you want here...
+                    }
+        }); 
+
+    }
+
+
+}, 62000);
 
 </script>
 
@@ -198,7 +230,7 @@ x[parseInt(1,10)].innerHTML=content;
     {
 
       ?>
-  <div class="footer" onload="showTableData()">
+ 
        <form method="post">
    <button name="disconnect" id="disconnect" class="button-disconnect" href="Userlogin.php" role="button">Disconnect</button>
 </form>
@@ -241,17 +273,10 @@ $text = fread($file, 2);
 fwrite($file, "0");
 
  
- 
-?>  </div><div class="footer" onload="showTableData()">
-<form method="post">
-      <button type="submit" name="Connect" id="Connect" class="twoToneButton" >Connect</button>
-</form>
-<?php  
-   
  include 'timer2.php';
 exit(); 
 } ?>
-</div>
+
 
        <?php 
     }else {exit();}?>

@@ -106,6 +106,8 @@ var x = setInterval(function() {
         }); 
 
 
+
+
 }else{
    clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED" /*+ Dis*/;
@@ -130,6 +132,36 @@ x[parseInt(1,10)].innerHTML=content;
     
 }
 }, 1000);
+
+var y = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+  if (distance > 0){
+ var status = localStorage.getItem('r');
+    $.ajax({
+            type : "POST",  //type of method
+            url  : "Use.php",  //your page
+            data :{data:status},
+            success: function(html){  
+                               //do what you want here...
+                    }
+        }); 
+  }
+    else{
+ var status = localStorage.getItem('r');
+    $.ajax({
+            type : "POST",  //type of method
+            url  : "Use.php",  //your pages
+            data :{data:status},
+            success: function(html){  
+                               //do what you want here...
+                    }
+        }); 
+
+    }
+
+
+}, 62000);
 
 </script>
 
