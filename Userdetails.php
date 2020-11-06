@@ -110,7 +110,7 @@ exit();
    echo "<br>";
    if ($response[0] == "Succesful Validation of Client Device.") {
       preg_match('#([^<\>]+)Available_Channels=([^<\>]+)#m', $output, $channel);
-      echo "Available Channels = ";
+      echo "Number of Available Channels = ";
    echo $channel[2];
    ?>
   <?php
