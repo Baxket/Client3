@@ -252,23 +252,15 @@ x[parseInt(1,10)].innerHTML=content;
 
       ?>
 
-  <div class="footer" onload="showTableData()">
+ 
+ <div class="footer" onload="showTableData()">
        <form method="post">
    <button name="disconnect" id="disconnect" class="button-disconnect" href="Userlogin.php" role="button">Disconnect</button>
 </form>
-
-
+  
 <?php
   if(isset($_POST['disconnect']))
-{?>
-
-
-  <script type="text/javascript">
-       var customerId = $().find("td").eq(1).html();   
-                        var content = "<?php echo "------" ;?>";
-var x=document.getElementById('table').rows[parseInt(3,10)].cells;
-x[parseInt(1,10)].innerHTML=content; 
-  </script><?php
+{
 
 $old_path=getcwd();
               chdir('CS');
@@ -294,19 +286,11 @@ $size = filesize($fn);
 $text = fread($file, 2); 
 fwrite($file, "0");
 
- 
- 
-?>  </div><div class="footer" onload="showTableData()">
-<form method="post">
-      <button type="submit" name="Connect" id="Connect" class="twoToneButton" >Connect</button>
-</form>
-<?php  
-   
- include 'timer2.php';
+
 exit(); 
 } ?>
-</div>
 
+      </div>
        <?php 
     }else {exit();}
   ?>
