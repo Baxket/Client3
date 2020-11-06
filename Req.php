@@ -8,12 +8,6 @@ $size = filesize($fn);
 $text = fread($file, 2); 
 fwrite($file, $name); 
 
-if($name != 0){
-               $old_path=getcwd();
-              chdir('CS');
-                 $output3=shell_exec("sh Spec_Use.sh");
-                  chdir($old_path);
-                  } 
 
 ?>
 
