@@ -32,7 +32,7 @@ $output=shell_exec("sh initial.sh $name $pass");
  chdir($old_path);
  echo "$output";
  $first_line = strtok($output,".");
- echo "$first_line";
+
 
 
 
